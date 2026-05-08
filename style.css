@@ -10,8 +10,9 @@ html{
 
 body{
   font-family:'Poppins',sans-serif;
-  background:#ffffff;
+  background:#f7f7f7;
   color:#2c2c2c;
+  overflow-x:hidden;
 }
 
 .container{
@@ -30,7 +31,6 @@ body{
 .navbar{
   width:90%;
   max-width:1200px;
-
   margin:auto;
 
   display:flex;
@@ -46,7 +46,7 @@ body{
 
 .menu{
   display:flex;
-  gap:35px;
+  gap:40px;
   list-style:none;
 }
 
@@ -73,20 +73,197 @@ body{
   grid-template-columns:1fr 1fr;
   align-items:center;
   gap:60px;
+}
+
+.hero-text{
+  z-index:2;
+}
+
+.top-text{
+  color:#c79b2c;
+  font-weight:600;
+  margin-bottom:18px;
+  display:block;
+  letter-spacing:1px;
+}
+
+.hero-content h1{
+  font-size:88px;
+  line-height:0.98;
+  color:#1f6977;
+  margin-bottom:28px;
+}
+
+.hero-content p{
+  font-size:22px;
+  line-height:1.8;
+  color:#4a4a4a;
+  margin-bottom:35px;
+  max-width:620px;
+}
+
+.btn{
+  display:inline-block;
+  background:#1f6977;
+  color:#fff;
+  padding:18px 38px;
+  border-radius:60px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#c79b2c;
+}
+
+.hero-image img{
+  width:100%;
+  height:650px;
+  object-fit:cover;
+  border-radius:28px;
+  box-shadow:0 15px 45px rgba(0,0,0,0.08);
+}
+
+section{
+  padding:110px 0;
+}
+
+section h2{
+  font-size:68px;
+  color:#1f6977;
+  margin-bottom:35px;
+  text-align:center;
+  line-height:1;
+}
+
+.sobre p{
+  text-align:center;
+  max-width:920px;
+  margin:0 auto 26px;
+  line-height:2;
+  font-size:20px;
+}
+
+.missao-box{
+  max-width:760px;
+  margin:55px auto 0;
+  padding:40px;
+  background:#f7f7f7;
+  border-left:6px solid #c79b2c;
+  border-radius:24px;
+  box-shadow:0 10px 35px rgba(0,0,0,0.05);
+}
+
+.missao-box h3{
+  color:#1f6977;
+  font-size:38px;
+  margin-bottom:16px;
+  text-align:center;
+}
+
+.missao-box p{
+  margin:0;
+  text-align:center;
+  line-height:1.9;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:30px;
+  margin-top:60px;
+}
+
+.card{
+  background:#ffffff;
+  padding:42px;
+  border-radius:28px;
+  box-shadow:0 10px 35px rgba(0,0,0,0.05);
+  transition:0.3s;
+}
+
+.card:hover{
   transform:translateY(-5px);
+}
+
+.card h3{
+  color:#1f6977;
+  margin-bottom:18px;
+  font-size:34px;
+}
+
+.card p{
+  line-height:1.9;
+  font-size:18px;
+}
+
+.momentos{
+  background:#f1f1f1;
+}
+
+.instagram-header{
+  display:flex;
+  align-items:center;
+  gap:24px;
+  margin-bottom:50px;
+}
+
+.instagram-header img{
+  width:110px;
+  height:110px;
+  object-fit:contain;
+  border-radius:50%;
+  background:#fff;
+  padding:12px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.05);
+}
+
+.instagram-header h2{
+  text-align:left;
+  margin-bottom:8px;
+  color:#1f6977;
+  font-size:72px;
+}
+
+.instagram-header p{
+  color:#555;
+  font-size:18px;
+}
+
+.instagram-link{
+  margin-left:auto;
+  background:#1f6977;
+  color:#fff;
+  padding:16px 28px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.instagram-link:hover{
+  background:#c79b2c;
+}
+
+.instagram-feed{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+}
+
+.instagram-post{
+  aspect-ratio:1/1;
+  overflow:hidden;
+  border-radius:24px;
+  background:#fff;
+  box-shadow:0 8px 25px rgba(0,0,0,0.05);
 }
 
 .instagram-post img{
   width:100%;
   height:100%;
-
   object-fit:cover;
-
-  transition:0.35s;
-}
-
-.instagram-post:hover img{
-  transform:scale(1.05);
 }
 
 .contactos{
@@ -111,12 +288,12 @@ body{
 .contacto-card h3{
   color:#1f6977;
   margin-bottom:14px;
-  font-size:21px;
+  font-size:28px;
 }
 
 .contacto-card p{
-  font-size:16px;
-  line-height:1.7;
+  font-size:17px;
+  line-height:1.8;
   margin:0;
 }
 
@@ -129,69 +306,184 @@ body{
 .contactos a:hover{
   color:#c79b2c;
 }
+
 footer{
   background:#1f6977;
   color:#fff;
   text-align:center;
-  padding:30px;
+  padding:45px 20px;
 }
+
 .congregacao-link{
-  margin-top:18px;
-  font-size:15px;
-  opacity:0.9;
+  margin-top:20px;
+  font-size:16px;
+  opacity:0.95;
 }
 
 .congregacao-link a{
   color:#ffffff;
   text-decoration:none;
-  font-weight:600;
+  font-weight:700;
 }
 
 .congregacao-link a:hover{
   text-decoration:underline;
 }
+
 @media(max-width:900px){
 
   .menu{
     display:none;
   }
 
+  .navbar{
+    padding:18px 0;
+  }
+
+  .logo img{
+    height:72px;
+  }
+
+  .hero{
+    min-height:auto;
+    padding-bottom:40px;
+  }
+
+  .hero-content{
+    grid-template-columns:1fr;
+    gap:35px;
+  }
+
+  .hero-text{
+    text-align:left;
+  }
+
+  .top-text{
+    font-size:15px;
+    line-height:1.5;
+  }
+
   .hero-content h1{
-    font-size:46px;
+    font-size:58px;
+    line-height:1.02;
+    margin-bottom:20px;
+  }
+
+  .hero-content p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:28px;
+  }
+
+  .btn{
+    width:100%;
+    text-align:center;
+    padding:18px;
+    font-size:18px;
+  }
+
+  .hero-image img{
+    height:340px;
+    border-radius:24px;
+  }
+
+  section{
+    padding:70px 0;
+  }
+
+  section h2{
+    font-size:52px;
+    line-height:1.05;
+    margin-bottom:25px;
+  }
+
+  .sobre p{
+    font-size:17px;
+    line-height:1.9;
+  }
+
+  .missao-box{
+    padding:28px 22px;
+  }
+
+  .missao-box h3{
+    font-size:40px;
+  }
+
+  .missao-box p{
+    font-size:17px;
   }
 
   .cards{
     grid-template-columns:1fr;
+    gap:22px;
   }
 
-  section h2{
-    font-size:34px;
+  .card{
+    padding:34px 28px;
+  }
+
+  .card h3{
+    font-size:28px;
+  }
+
+  .card p{
+    font-size:17px;
+    line-height:1.8;
   }
 
   .instagram-header{
     flex-direction:column;
     text-align:center;
+    gap:20px;
   }
 
   .instagram-header h2{
     text-align:center;
+    font-size:58px;
+  }
+
+  .instagram-header p{
+    font-size:17px;
   }
 
   .instagram-link{
     margin-left:0;
+    width:100%;
+    text-align:center;
+    padding:18px;
   }
 
   .instagram-feed{
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:1fr 1fr;
+    gap:14px;
   }
-.hero-content{
-  grid-template-columns:1fr;
-}
 
-.hero-image img{
-  height:360px;
-  
-.contactos-grid{
-  grid-template-columns:1fr;
-}
+  .instagram-post{
+    border-radius:18px;
+  }
+
+  .contactos-grid{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+
+  .contacto-card{
+    padding:28px 24px;
+  }
+
+  .contacto-card h3{
+    font-size:28px;
+  }
+
+  .contacto-card p{
+    font-size:17px;
+    line-height:1.8;
+    word-break:break-word;
+  }
+
+  footer{
+    padding:45px 22px;
+  }
+
 }
