@@ -326,13 +326,49 @@ footer{
 .congregacao-link a:hover{
   text-decoration:underline;
 }
-
+.menu-toggle{
+  display:none;
+  font-size:34px;
+  cursor:pointer;
+  color:#1f6977;
+}
 @media(max-width:900px){
 
   .menu{
     display:none;
   }
+.menu-toggle{
+  display:block;
+}
 
+.mobile-menu{
+  position:absolute;
+
+  top:90px;
+  left:5%;
+
+  width:90%;
+
+  background:#ffffff;
+
+  border-radius:22px;
+
+  padding:24px;
+
+  box-shadow:0 10px 35px rgba(0,0,0,0.08);
+
+  display:none;
+
+  flex-direction:column;
+
+  gap:18px;
+
+  z-index:999;
+}
+
+.mobile-menu.active{
+  display:flex;
+}
   .hero-content{
     grid-template-columns:1fr;
     gap:35px;
