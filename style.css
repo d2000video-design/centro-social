@@ -165,48 +165,86 @@ section h2{
   background:#f7f7f7;
 }
 
-.subtitulo{
-  text-align:center;
+.instagram-header{
+  display:flex;
+  align-items:center;
+  gap:24px;
   margin-bottom:50px;
 }
 
-.feed{
+.instagram-header img{
+  width:95px;
+  height:95px;
+  object-fit:contain;
+  border-radius:50%;
+  background:#fff;
+  padding:12px;
+
+  box-shadow:0 8px 25px rgba(0,0,0,0.06);
+}
+
+.instagram-header h2{
+  text-align:left;
+  margin-bottom:8px;
+  color:#1f6977;
+}
+
+.instagram-header p{
+  color:#555;
+}
+
+.instagram-link{
+  margin-left:auto;
+
+  background:#1f6977;
+  color:#fff;
+
+  padding:12px 24px;
+
+  border-radius:40px;
+
+  text-decoration:none;
+  font-weight:600;
+
+  transition:0.3s;
+}
+
+.instagram-link:hover{
+  background:#c79b2c;
+}
+
+.instagram-feed{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:25px;
+  gap:12px;
 }
 
-.feed-card{
+.instagram-post{
+  aspect-ratio:1/1;
+
   background:#fff;
-  border-radius:24px;
+
   overflow:hidden;
 
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  border-radius:14px;
+
+  cursor:pointer;
+
+  box-shadow:0 8px 25px rgba(0,0,0,0.06);
 }
 
-.feed-card img{
+.instagram-post img{
   width:100%;
-  height:320px;
-  object-fit:contain;
-  padding:40px;
-  background:#ffffff;
+  height:100%;
+
+  object-fit:cover;
+
+  transition:0.35s;
 }
 
-.feed-text{
-  padding:22px;
+.instagram-post:hover img{
+  transform:scale(1.06);
 }
-
-.feed-text span{
-  display:block;
-  margin-bottom:10px;
-  color:#1f6977;
-  font-weight:600;
-}
-
-.feed-text p{
-  line-height:1.7;
-}
-
 .contactos{
   text-align:center;
 }
@@ -237,16 +275,25 @@ footer{
     grid-template-columns:1fr;
   }
 
-  .feed{
-    grid-template-columns:1fr;
-  }
-
-  .feed-card img{
-    height:240px;
-  }
-
   section h2{
     font-size:34px;
+  }
+
+  .instagram-header{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .instagram-header h2{
+    text-align:center;
+  }
+
+  .instagram-link{
+    margin-left:0;
+  }
+
+  .instagram-feed{
+    grid-template-columns:repeat(2,1fr);
   }
 
 }
