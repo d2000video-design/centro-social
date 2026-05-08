@@ -311,12 +311,35 @@ section h2{
 
 .contactos{
   text-align:center;
+  background:#ffffff;
 }
 
-.contactos p{
-  margin-bottom:18px;
-  font-size:18px;
+.contactos-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:22px;
+  margin-top:45px;
 }
+
+.contacto-card{
+  background:#f7f7f7;
+  padding:30px 22px;
+  border-radius:22px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.05);
+}
+
+.contacto-card h3{
+  color:#1f6977;
+  margin-bottom:14px;
+  font-size:21px;
+}
+
+.contacto-card p{
+  font-size:16px;
+  line-height:1.7;
+  margin:0;
+}
+
 .contactos a{
   color:#1f6977;
   text-decoration:none;
@@ -387,5 +410,8 @@ footer{
 
 .hero-image img{
   height:360px;
-
+  
+.contactos-grid{
+  grid-template-columns:1fr;
+}
 }
