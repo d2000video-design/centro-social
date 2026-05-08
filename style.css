@@ -306,7 +306,15 @@ section h2{
   margin-bottom:18px;
   font-size:18px;
 }
+.contactos a{
+  color:#1f6977;
+  text-decoration:none;
+  font-weight:600;
+}
 
+.contactos a:hover{
+  color:#c79b2c;
+}
 footer{
   background:#1f6977;
   color:#fff;
