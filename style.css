@@ -10,8 +10,9 @@ html{
 
 body{
   font-family:'Poppins',sans-serif;
-  background:#ffffff;
+  background:#f7f7f7;
   color:#2c2c2c;
+  overflow-x:hidden;
 }
 
 .container{
@@ -30,7 +31,6 @@ body{
 .navbar{
   width:90%;
   max-width:1200px;
-
   margin:auto;
 
   display:flex;
@@ -46,7 +46,7 @@ body{
 
 .menu{
   display:flex;
-  gap:35px;
+  gap:40px;
   list-style:none;
 }
 
@@ -73,20 +73,194 @@ body{
   grid-template-columns:1fr 1fr;
   align-items:center;
   gap:60px;
+}
+
+.top-text{
+  color:#c79b2c;
+  font-weight:600;
+  margin-bottom:18px;
+  display:block;
+  letter-spacing:1px;
+}
+
+.hero-content h1{
+  font-size:88px;
+  line-height:0.98;
+  color:#1f6977;
+  margin-bottom:28px;
+}
+
+.hero-content p{
+  font-size:22px;
+  line-height:1.8;
+  color:#4a4a4a;
+  margin-bottom:35px;
+  max-width:620px;
+}
+
+.btn{
+  display:inline-block;
+  background:#1f6977;
+  color:#fff;
+  padding:18px 38px;
+  border-radius:60px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#c79b2c;
+}
+
+.hero-image img{
+  width:100%;
+  height:650px;
+  object-fit:cover;
+  border-radius:28px;
+  box-shadow:0 15px 45px rgba(0,0,0,0.08);
+}
+
+section{
+  padding:110px 0;
+}
+
+section h2{
+  font-size:68px;
+  color:#1f6977;
+  margin-bottom:35px;
+  text-align:center;
+}
+
+.sobre p{
+  text-align:center;
+  max-width:920px;
+  margin:0 auto 26px;
+  line-height:2;
+  font-size:20px;
+}
+
+.missao-box{
+  max-width:760px;
+  margin:55px auto 0;
+  padding:40px;
+  background:#f7f7f7;
+  border-left:6px solid #c79b2c;
+  border-radius:24px;
+  box-shadow:0 10px 35px rgba(0,0,0,0.05);
+}
+
+.missao-box h3{
+  color:#1f6977;
+  font-size:38px;
+  margin-bottom:16px;
+  text-align:center;
+}
+
+.missao-box p{
+  margin:0;
+  text-align:center;
+  line-height:1.9;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:30px;
+  margin-top:60px;
+}
+
+.card{
+  background:#ffffff;
+  padding:42px;
+  border-radius:28px;
+  box-shadow:0 10px 35px rgba(0,0,0,0.05);
+  transition:0.3s;
+}
+
+.card:hover{
   transform:translateY(-5px);
+}
+
+.card h3{
+  color:#1f6977;
+  margin-bottom:18px;
+  font-size:34px;
+}
+
+.card p{
+  line-height:1.9;
+  font-size:18px;
+}
+
+.momentos{
+  background:#f1f1f1;
+}
+
+.instagram-header{
+  display:flex;
+  align-items:center;
+  gap:22px;
+  margin-bottom:42px;
+}
+
+.instagram-header img{
+  width:86px;
+  height:86px;
+  object-fit:contain;
+  border-radius:50%;
+  background:#fff;
+  padding:10px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.05);
+}
+
+.instagram-header h2{
+  text-align:left;
+  margin-bottom:4px;
+  color:#1f6977;
+  font-size:42px;
+  line-height:1;
+}
+
+.instagram-header p{
+  color:#555;
+  font-size:16px;
+}
+
+.instagram-link{
+  margin-left:auto;
+  background:#1f6977;
+  color:#fff;
+  padding:13px 24px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:15px;
+  transition:0.3s;
+}
+
+.instagram-link:hover{
+  background:#c79b2c;
+}
+
+.instagram-feed{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.instagram-post{
+  aspect-ratio:1/1;
+  overflow:hidden;
+  border-radius:20px;
+  background:#fff;
+  box-shadow:0 8px 25px rgba(0,0,0,0.05);
 }
 
 .instagram-post img{
   width:100%;
   height:100%;
-
   object-fit:cover;
-
-  transition:0.35s;
-}
-
-.instagram-post:hover img{
-  transform:scale(1.05);
 }
 
 .contactos{
@@ -129,69 +303,102 @@ body{
 .contactos a:hover{
   color:#c79b2c;
 }
+
 footer{
   background:#1f6977;
   color:#fff;
   text-align:center;
-  padding:30px;
+  padding:45px 20px;
 }
+
 .congregacao-link{
-  margin-top:18px;
-  font-size:15px;
-  opacity:0.9;
+  margin-top:20px;
+  font-size:16px;
+  opacity:0.95;
 }
 
 .congregacao-link a{
   color:#ffffff;
   text-decoration:none;
-  font-weight:600;
+  font-weight:700;
 }
 
 .congregacao-link a:hover{
   text-decoration:underline;
 }
+
 @media(max-width:900px){
 
   .menu{
     display:none;
   }
 
+  .hero-content{
+    grid-template-columns:1fr;
+    gap:35px;
+  }
+
+  .hero-image img{
+    height:360px;
+  }
+
+  section{
+    padding:70px 0;
+  }
+
+  section h2{
+    font-size:52px;
+    line-height:1.1;
+  }
+
   .hero-content h1{
-    font-size:46px;
+    font-size:58px;
+    line-height:1.05;
+  }
+
+  .hero-content p{
+    font-size:18px;
+    line-height:1.8;
+  }
+
+  .btn{
+    width:100%;
+    text-align:center;
   }
 
   .cards{
     grid-template-columns:1fr;
   }
 
-  section h2{
-    font-size:34px;
-  }
-
   .instagram-header{
     flex-direction:column;
     text-align:center;
+    gap:16px;
   }
 
   .instagram-header h2{
     text-align:center;
+    font-size:42px;
+  }
+
+  .instagram-header p{
+    font-size:16px;
   }
 
   .instagram-link{
     margin-left:0;
+    width:100%;
+    text-align:center;
+    padding:16px;
   }
 
   .instagram-feed{
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:1fr 1fr;
+    gap:12px;
   }
-.hero-content{
-  grid-template-columns:1fr;
-}
 
-.hero-image img{
-  height:360px;
-  
-.contactos-grid{
-  grid-template-columns:1fr;
-}
+  .contactos-grid{
+    grid-template-columns:1fr;
+  }
+
 }
