@@ -162,8 +162,9 @@ section h2{
   padding:42px 34px;
   border-radius:28px;
   box-shadow:0 10px 35px rgba(0,0,0,0.05);
-  transition:0.3s;
+  transition:0.35s ease;
   border:1px solid rgba(0,0,0,0.04);
+  min-height:180px;
 }
 
 .valor-card:hover{
@@ -181,6 +182,16 @@ section h2{
   font-size:17px;
   line-height:1.9;
   margin-bottom:18px;
+
+  opacity:0;
+  max-height:0;
+  overflow:hidden;
+  transition:0.35s ease;
+}
+
+.valor-card:hover p{
+  opacity:1;
+  max-height:300px;
 }
 
 .cards{
