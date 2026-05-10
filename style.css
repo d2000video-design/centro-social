@@ -380,9 +380,9 @@ footer{
     gap:35px;
   }
 
-  .hero-image img{
-    height:360px;
-  }
+ .hero-video{
+  height:320px;
+}
 
   section{
     padding:70px 0;
