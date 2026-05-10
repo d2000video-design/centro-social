@@ -208,6 +208,9 @@ section h2{
   border-radius:28px;
   box-shadow:0 10px 35px rgba(0,0,0,0.05);
   transition:0.3s;
+
+  text-decoration:none;
+  color:#2c2c2c;
 }
 
 .card:hover{
@@ -215,7 +218,7 @@ section h2{
 }
 
 .card h3{
-  color:#1f6977;
+  color:#c79b2c;
   margin-bottom:18px;
   font-size:28px;
 }
