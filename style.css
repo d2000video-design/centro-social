@@ -355,6 +355,51 @@ section h2{
   font-size:18px;
   line-height:1.8;
 }
+.documentos{
+  background:#ffffff;
+}
+
+.documentos-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
+  margin-top:50px;
+}
+
+.documento-card{
+  background:#f7f7f7;
+  padding:38px;
+  border-radius:28px;
+  box-shadow:0 10px 35px rgba(0,0,0,0.05);
+  text-align:center;
+}
+
+.documento-card h3{
+  color:#c79b2c;
+  font-size:30px;
+  margin-bottom:26px;
+}
+
+.documento-card a{
+  display:block;
+  margin-bottom:16px;
+  padding:16px;
+
+  background:#ffffff;
+
+  border-radius:18px;
+
+  text-decoration:none;
+  color:#1f6977;
+  font-weight:600;
+
+  transition:0.3s;
+}
+
+.documento-card a:hover{
+  background:#c79b2c;
+  color:#ffffff;
+}
 .contactos{
   text-align:center;
   background:#ffffff;
@@ -585,5 +630,12 @@ footer{
 }
   .back-to-top{
   display:none;
+}
+  .documentos-grid{
+  grid-template-columns:1fr;
+}
+  .valor-card p{
+  opacity:1;
+  max-height:1000px;
 }
 }
