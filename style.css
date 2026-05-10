@@ -63,18 +63,16 @@ body{
 
 .hero-content{
   flex:1;
-
   width:90%;
-  max-width:1300px;
-
+  max-width:1100px;
   margin:auto;
-
-  display:grid;
-  grid-template-columns:1fr 1fr;
+  display:flex;
+  flex-direction:column;
   align-items:center;
-  gap:60px;
+  justify-content:center;
+  text-align:center;
+  gap:38px;
 }
-
 .top-text{
   color:#c79b2c;
   font-weight:600;
@@ -94,10 +92,9 @@ body{
   font-size:19px;
   line-height:1.8;
   color:#4a4a4a;
-  margin-bottom:35px;
-  max-width:620px;
+  margin-bottom:0;
+  max-width:720px;
 }
-
 .btn{
   display:inline-block;
   background:#1f6977;
@@ -116,25 +113,18 @@ body{
 .hero-video{
   position:relative;
   width:100%;
-  height:650px;
+  max-width:980px;
+  aspect-ratio:16/9;
   border-radius:28px;
   overflow:hidden;
   box-shadow:0 15px 45px rgba(0,0,0,0.08);
 }
 
 .hero-video iframe{
-  position:absolute;
-  top:50%;
-  left:50%;
-
-  width:177.77%;
+  width:100%;
   height:100%;
-
-  transform:translate(-50%,-50%);
-
   border:none;
 }
-
 section{
   padding:110px 0;
 }
@@ -383,13 +373,13 @@ footer{
 .mobile-menu.active{
   display:flex;
 }
-  .hero-content{
-    grid-template-columns:1fr;
-    gap:35px;
-  }
+ .hero-content{
+  gap:28px;
+}
 
- .hero-video{
-  height:320px;
+.hero-video{
+  width:100%;
+  aspect-ratio:16/9;
 }
 
   section{
