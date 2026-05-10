@@ -421,6 +421,42 @@ footer{
   cursor:pointer;
   color:#1f6977;
 }
+.back-to-top{
+  position:fixed;
+
+  right:24px;
+  bottom:24px;
+
+  width:52px;
+  height:52px;
+
+  border:none;
+  border-radius:50%;
+
+  background:#c79b2c;
+  color:#ffffff;
+
+  font-size:22px;
+  cursor:pointer;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.18);
+
+  opacity:0;
+  visibility:hidden;
+
+  transition:0.3s;
+
+  z-index:999;
+}
+
+.back-to-top.show{
+  opacity:1;
+  visibility:visible;
+}
+
+.back-to-top:hover{
+  transform:translateY(-4px);
+}
 @media(max-width:900px){
 
   .menu{
@@ -543,5 +579,8 @@ footer{
   }
 .valores-grid{
   grid-template-columns:1fr;
+}
+  .back-to-top{
+  display:none;
 }
 }
