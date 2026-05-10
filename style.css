@@ -113,12 +113,18 @@ body{
   background:#c79b2c;
 }
 
-.hero-image img{
+.hero-video{
+  position:relative;
   width:100%;
   height:650px;
-  object-fit:cover;
+  overflow:hidden;
   border-radius:28px;
   box-shadow:0 15px 45px rgba(0,0,0,0.08);
+}
+
+.hero-video iframe{
+  width:100%;
+  height:100%;
 }
 
 section{
