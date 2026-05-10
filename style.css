@@ -275,24 +275,71 @@ section h2{
   background:#c79b2c;
 }
 
-.instagram-feed{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
-}
-
-.instagram-post{
-  aspect-ratio:1/1;
+.momentos-slider{
+  position:relative;
+  max-width:980px;
+  margin:0 auto;
+  border-radius:28px;
   overflow:hidden;
-  border-radius:20px;
-  background:#fff;
-  box-shadow:0 8px 25px rgba(0,0,0,0.05);
+  box-shadow:0 15px 45px rgba(0,0,0,0.08);
+  background:#ffffff;
 }
 
-.instagram-post img{
+.slide-link{
+  display:block;
+  position:relative;
+  text-decoration:none;
+  color:#ffffff;
+}
+
+.slide-img{
   width:100%;
-  height:100%;
+  height:560px;
   object-fit:cover;
+  display:block;
+}
+
+.slide-info{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:40px;
+  background:linear-gradient(transparent, rgba(0,0,0,0.72));
+}
+
+.slide-info h3{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.slide-info p{
+  font-size:17px;
+  line-height:1.7;
+  max-width:720px;
+}
+
+.slider-btn{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:5;
+  border:none;
+  background:rgba(255,255,255,0.85);
+  color:#1f6977;
+  width:46px;
+  height:46px;
+  border-radius:50%;
+  cursor:pointer;
+  font-size:24px;
+}
+
+.slider-btn.prev{
+  left:18px;
+}
+
+.slider-btn.next{
+  right:18px;
 }
 .newsletter{
   background:#f7f7f7;
@@ -470,10 +517,26 @@ footer{
     padding:16px;
   }
 
-  .instagram-feed{
-    grid-template-columns:1fr 1fr;
-    gap:12px;
-  }
+  .slide-img{
+  height:360px;
+}
+
+.slide-info{
+  padding:28px;
+}
+
+.slide-info h3{
+  font-size:24px;
+}
+
+.slide-info p{
+  font-size:15px;
+}
+
+.slider-btn{
+  width:40px;
+  height:40px;
+}
 
   .contactos-grid{
     grid-template-columns:1fr;
