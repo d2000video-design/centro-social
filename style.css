@@ -147,27 +147,40 @@ section h2{
   font-size:18px;
 }
 
-.missao-box{
-  max-width:760px;
-  margin:55px auto 0;
-  padding:40px;
-  background:#f7f7f7;
-  border-left:6px solid #c79b2c;
-  border-radius:24px;
+.valores{
+  background:#ffffff;
+}
+
+.valores-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
+}
+
+.valor-card{
+  background:#ffffff;
+  padding:42px 34px;
+  border-radius:28px;
   box-shadow:0 10px 35px rgba(0,0,0,0.05);
+  transition:0.3s;
+  border:1px solid rgba(0,0,0,0.04);
 }
 
-.missao-box h3{
-  color:#1f6977;
-  font-size:38px;
-  margin-bottom:16px;
-  text-align:center;
+.valor-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 16px 45px rgba(0,0,0,0.08);
 }
 
-.missao-box p{
-  margin:0;
-  text-align:center;
+.valor-card h3{
+  color:#c79b2c;
+  font-size:32px;
+  margin-bottom:22px;
+}
+
+.valor-card p{
+  font-size:17px;
   line-height:1.9;
+  margin-bottom:18px;
 }
 
 .cards{
@@ -453,5 +466,7 @@ footer{
   .contactos-grid{
     grid-template-columns:1fr;
   }
-
+.valores-grid{
+  grid-template-columns:1fr;
+}
 }
