@@ -223,7 +223,35 @@ section h2{
   font-size:28px;
 }
 
-.card p{
+..espacos{
+  background:#f7f7f7;
+}
+
+.espacos-content{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.espacos-texto h2{
+  text-align:left;
+  margin-bottom:26px;
+}
+
+.espacos-texto p{
+  font-size:18px;
+  line-height:2;
+  margin-bottom:22px;
+  color:#4a4a4a;
+}
+
+.espacos-imagem img{
+  width:100%;
+  border-radius:28px;
+  box-shadow:0 15px 45px rgba(0,0,0,0.08);
+  object-fit:cover;
+}card p{
   line-height:1.9;
   font-size:18px;
 }
@@ -637,5 +665,17 @@ footer{
   .valor-card p{
   opacity:1;
   max-height:1000px;
+}
+  .espacos-content{
+  grid-template-columns:1fr;
+  gap:34px;
+}
+
+.espacos-texto h2{
+  text-align:center;
+}
+
+.espacos-texto p{
+  text-align:center;
 }
 }
