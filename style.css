@@ -266,7 +266,17 @@ section h2{
   height:100%;
   object-fit:cover;
 }
+.newsletter{
+  background:#f7f7f7;
+  text-align:center;
+}
 
+.newsletter p{
+  max-width:720px;
+  margin:0 auto 30px;
+  font-size:18px;
+  line-height:1.8;
+}
 .contactos{
   text-align:center;
   background:#ffffff;
