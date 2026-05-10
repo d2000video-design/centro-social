@@ -533,6 +533,9 @@ footer{
 .back-to-top:hover{
   transform:translateY(-4px);
 }
+.mobile-bottom-menu{
+  display:none;
+}
 @media(max-width:900px){
 
   .menu{
@@ -677,5 +680,51 @@ footer{
 
 .espacos-texto p{
   text-align:center;
+}
+  .mobile-bottom-menu{
+  position:fixed;
+  left:50%;
+  bottom:16px;
+  transform:translateX(-50%);
+
+  width:92%;
+  max-width:420px;
+
+  background:#ffffff;
+
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:4px;
+
+  padding:10px;
+
+  border-radius:24px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.18);
+
+  z-index:999;
+}
+
+.mobile-bottom-menu a{
+  text-align:center;
+  text-decoration:none;
+
+  color:#1f6977;
+
+  font-size:12px;
+  font-weight:600;
+
+  padding:10px 4px;
+
+  border-radius:16px;
+}
+
+.mobile-bottom-menu a:hover{
+  background:#f7f7f7;
+  color:#c79b2c;
+}
+
+body{
+  padding-bottom:86px;
 }
 }
