@@ -803,4 +803,31 @@ footer{
 body{
   padding-bottom:86px;
 }
+  .pagina-servico-content h1{
+  font-size:46px;
+  line-height:1.1;
+}
+
+.pagina-servico-content p{
+  font-size:18px;
+  line-height:1.8;
+}
+
+.objetivos-lista{
+  gap:14px;
+}
+
+.objetivos-lista p{
+  padding:18px;
+  font-size:16px;
+}
+
+.servico-botoes{
+  flex-direction:column;
+}
+
+.servico-botoes a{
+  width:100%;
+  text-align:center;
+}
 }
