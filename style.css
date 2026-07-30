@@ -702,6 +702,50 @@ footer{
   background:#1f6977;
 }
 
+/* GALERIA DAS PAGINAS DE SERVICOS */
+
+.servicos-menu-link::after{
+  content:"\25BE";
+}
+
+.servico-galeria{
+  background:#ffffff;
+  overflow:hidden;
+}
+
+.galeria-intro{
+  max-width:720px;
+  margin:0 auto 36px;
+  text-align:center;
+  color:#555555;
+  font-size:17px;
+  line-height:1.8;
+}
+
+.galeria-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+  width:100%;
+}
+
+.galeria-grid img{
+  display:block;
+  width:100%;
+  height:230px;
+  object-fit:cover;
+  border-radius:20px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+  transition:transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.galeria-grid img:hover{
+  position:relative;
+  z-index:2;
+  transform:scale(1.035);
+  box-shadow:0 14px 35px rgba(0,0,0,0.14);
+}
+
 /* MOBILE */
 
 @media(max-width:900px){
@@ -954,5 +998,36 @@ footer{
   .servico-botoes a{
     width:100%;
     text-align:center;
+  }
+
+  .servico-galeria .container{
+    overflow:hidden;
+  }
+
+  .galeria-intro{
+    margin-bottom:26px;
+    padding:0 6px;
+    font-size:16px;
+  }
+
+  .galeria-grid{
+    display:flex;
+    gap:0;
+    width:100%;
+    transition:transform 0.55s ease;
+    will-change:transform;
+    touch-action:pan-y;
+  }
+
+  .galeria-grid img{
+    flex:0 0 100%;
+    width:100%;
+    height:320px;
+    border-radius:20px;
+    box-shadow:none;
+  }
+
+  .galeria-grid img:hover{
+    transform:none;
   }
 }
