@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta
+    name="description"
+    content="Conheça o Centro de Dia da Fundação Centro Social Nossa Senhora do Paço, em Barbacena, Elvas.">
+
   <title>Centro de Dia | Fundação Centro Social Nossa Senhora do Paço</title>
 
   <link rel="stylesheet" href="style.css">
@@ -23,7 +27,7 @@
 
     <nav class="navbar">
 
-      <div class="menu-toggle">
+      <div class="menu-toggle" aria-label="Abrir menu">
         ☰
       </div>
 
@@ -39,7 +43,7 @@
         <li><a href="index.html">Início</a></li>
         <li><a href="index.html#sobre">Sobre</a></li>
         <li><a href="index.html#servicos">Serviços</a></li>
-        <li><a href="index.html#momentos">Momentos</a></li>
+        <li><a href="#documentos">Documentos</a></li>
         <li><a href="index.html#contactos">Contactos</a></li>
       </ul>
 
@@ -54,8 +58,9 @@
       <h1>Centro de Dia</h1>
 
       <p>
-        Acompanhamento diário, proximidade e bem-estar,
-        promovendo a autonomia e o convívio das pessoas idosas.
+        Um conjunto de serviços que contribuem para a permanência das pessoas
+        no seu meio habitual de vida, promovendo autonomia, acompanhamento,
+        convívio e qualidade de vida.
       </p>
 
     </div>
@@ -64,66 +69,115 @@
 
   <main>
 
-    <section class="sobre servico-detalhe">
+    <section class="galeria-servico">
+
+      <div class="container">
+
+        <div class="galeria-grid">
+
+          <img
+            src="imagens/centrodia-1.jpg"
+            alt="Espaços e atividades do Centro de Dia"
+            loading="lazy">
+
+          <img
+            src="imagens/centrodia-2.jpg"
+            alt="Convívio no Centro de Dia"
+            loading="lazy">
+
+          <img
+            src="imagens/centrodia-3.jpg"
+            alt="Acompanhamento aos utentes do Centro de Dia"
+            loading="lazy">
+
+          <img
+            src="imagens/centrodia-4.jpg"
+            alt="Instalações do Centro de Dia"
+            loading="lazy">
+
+          <img
+            src="imagens/centrodia-5.jpg"
+            alt="Atividades desenvolvidas no Centro de Dia"
+            loading="lazy">
+
+          <img
+            src="imagens/centrodia-6.jpg"
+            alt="Bem-estar e acompanhamento no Centro de Dia"
+            loading="lazy">
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="servico-detalhe">
 
       <div class="container">
 
         <h2>Sobre o Centro de Dia</h2>
 
         <p>
-          O Centro de Dia da Fundação Centro Social Nossa Senhora do Paço
-          é uma resposta social destinada a pessoas idosas que pretendem
-          permanecer no seu meio familiar, beneficiando durante o dia de
-          acompanhamento, alimentação, cuidados pessoais e atividades
-          adaptadas às suas necessidades.
+          A resposta social Centro de Dia oferece aos seus utentes um conjunto
+          de serviços que contribuem para a manutenção das pessoas no seu meio
+          habitual de vida, promovendo a autonomia e prevenindo situações de
+          dependência ou o seu agravamento.
         </p>
 
         <p>
-          Num ambiente seguro, próximo e familiar, procuramos preservar
-          a autonomia, estimular as capacidades individuais e combater
-          situações de isolamento social.
+          Os utentes têm ainda a possibilidade de estabelecer novos
+          relacionamentos e elos de ligação com o exterior, participando
+          diariamente num ambiente de proximidade, convívio e segurança.
         </p>
 
         <p>
-          Cada pessoa é acompanhada com respeito pela sua história,
-          dignidade, individualidade e ritmo de vida.
+          Para proporcionar uma resposta de qualidade às pessoas idosas,
+          o Centro de Dia conta com uma equipa multidisciplinar, motivada
+          e empenhada, que trabalha diariamente para promover o bem-estar
+          físico, emocional e social de cada utente.
         </p>
 
       </div>
 
     </section>
 
-    <section class="valores">
+    <section class="servico-objetivos">
 
       <div class="container">
 
-        <h2>Objetivos</h2>
+        <h2>Os nossos objetivos</h2>
 
         <div class="objetivos-lista">
 
           <p>
-            Promover o bem-estar físico, emocional e social dos utentes.
+            Promover a qualidade de vida.
           </p>
 
           <p>
-            Preservar e estimular a autonomia nas atividades da vida diária.
+            Promover as relações interpessoais entre as pessoas idosas,
+            bem como a convivência com as demais faixas etárias.
           </p>
 
           <p>
-            Prevenir situações de solidão e isolamento social.
+            Contribuir para a estabilização ou retardamento do processo
+            de envelhecimento.
           </p>
 
           <p>
-            Proporcionar alimentação adequada e acompanhamento diário.
+            Privilegiar a interação com a família, pessoas significativas
+            e comunidade, procurando otimizar os níveis de atividade
+            e participação social.
           </p>
 
           <p>
-            Desenvolver atividades recreativas, culturais e ocupacionais.
+            Promover estratégias de reforço da autoestima, valorização
+            e autonomia pessoal e social, num ambiente agradável de lazer,
+            convívio, cultura e formação.
           </p>
 
           <p>
-            Apoiar as famílias e favorecer a permanência da pessoa idosa
-            no seu ambiente familiar.
+            Combater situações de isolamento e falta de apoio através
+            de um conjunto diversificado de atividades.
           </p>
 
         </div>
@@ -132,15 +186,15 @@
 
     </section>
 
-    <section class="documentos" id="documentos">
+    <section class="servico-documentos" id="documentos">
 
       <div class="container">
 
-        <h2>Documentos e Informações</h2>
+        <h2>Documentos e informações</h2>
 
-        <p>
-          Consulte o regulamento e as informações relativas ao funcionamento
-          do Centro de Dia.
+        <p class="servico-documentos-intro">
+          Consulte os documentos disponíveis sobre o funcionamento
+          e os serviços do Centro de Dia.
         </p>
 
         <div class="servico-botoes">
@@ -165,25 +219,25 @@
 
     </section>
 
-    <section class="contactos">
+    <section class="contactos servico-contacto">
 
       <div class="container">
 
         <h2>Contacte-nos</h2>
 
         <p>
-          Para obter mais informações sobre o Centro de Dia,
-          entre em contacto com a Fundação.
+          Para esclarecer dúvidas ou obter mais informações sobre o Centro
+          de Dia, entre em contacto com a Fundação.
         </p>
 
         <div class="servico-botoes">
 
           <a href="tel:+351268662174">
-            Ligar para a Fundação
+            +351 268 662 174
           </a>
 
           <a href="mailto:csnspaco@sapo.pt">
-            Enviar email
+            csnspaco@sapo.pt
           </a>
 
         </div>
@@ -237,7 +291,7 @@
 
   </nav>
 
-  <button class="back-to-top">
+  <button class="back-to-top" type="button" aria-label="Voltar ao topo">
     ↑
   </button>
 
