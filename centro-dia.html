@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Centro de Dia | Fundação Centro Social Nossa Senhora do Paço</title>
+
   <meta
     name="description"
-    content="Conheça o Centro de Dia da Fundação Centro Social Nossa Senhora do Paço, em Barbacena, Elvas.">
-
-  <title>Centro de Dia | Fundação Centro Social Nossa Senhora do Paço</title>
+    content="Conheça o Centro de Dia da Fundação Centro Social Nossa Senhora do Paço, em Barbacena, Elvas."
+  >
 
   <link rel="stylesheet" href="style.css">
 
@@ -18,7 +19,34 @@
 
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"
+  >
+
+  <style>
+    .servico-galeria{
+      padding:50px 0 75px;
+    }
+
+    .galeria-intro{
+      margin:0 auto 32px;
+      color:#1f6977;
+      font-size:24px;
+      font-weight:600;
+      line-height:1.5;
+      text-align:center;
+    }
+
+    @media(max-width:900px){
+      .servico-galeria{
+        padding:38px 0 55px;
+      }
+
+      .galeria-intro{
+        margin-bottom:24px;
+        font-size:20px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -27,24 +55,53 @@
 
     <nav class="navbar">
 
-      <div class="menu-toggle" aria-label="Abrir menu">
-        ☰
-      </div>
-
       <div class="logo">
-        <a href="index.html">
+        <a href="index.html" aria-label="Voltar à página inicial">
           <img
             src="imagens/logo.png"
-            alt="Fundação Centro Social Nossa Senhora do Paço">
+            alt="Fundação Centro Social Nossa Senhora do Paço"
+          >
         </a>
       </div>
 
-      <ul class="menu mobile-menu">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="index.html#sobre">Sobre</a></li>
-        <li><a href="index.html#servicos">Serviços</a></li>
-        <li><a href="#documentos">Documentos</a></li>
-        <li><a href="index.html#contactos">Contactos</a></li>
+      <ul class="menu">
+
+        <li>
+          <a href="index.html#sobre">Sobre</a>
+        </li>
+
+        <li class="menu-dropdown">
+
+          <a href="#" class="servicos-menu-link">
+            Serviços
+          </a>
+
+          <ul class="submenu">
+            <li><a href="erpi.html">ERPI</a></li>
+            <li><a href="centro-dia.html">Centro de Dia</a></li>
+            <li>
+              <a href="apoio-domiciliario.html">Apoio Domiciliário</a>
+            </li>
+            <li><a href="creche.html">Creche</a></li>
+            <li>
+              <a href="jardim-infancia.html">Jardim de Infância</a>
+            </li>
+          </ul>
+
+        </li>
+
+        <li>
+          <a href="index.html#documentos">Documentos</a>
+        </li>
+
+        <li>
+          <a href="index.html#momentos">Momentos</a>
+        </li>
+
+        <li>
+          <a href="index.html#contactos">Contactos</a>
+        </li>
+
       </ul>
 
     </nav>
@@ -69,41 +126,51 @@
 
   <main>
 
-    <section class="galeria-servico">
+    <section class="servico-galeria">
 
       <div class="container">
+
+        <p class="galeria-intro">
+          Conheça alguns dos espaços e momentos do nosso Centro de Dia.
+        </p>
 
         <div class="galeria-grid">
 
           <img
             src="imagens/centrodia-1.jpg"
             alt="Espaços e atividades do Centro de Dia"
-            loading="lazy">
+            loading="lazy"
+          >
 
           <img
             src="imagens/centrodia-2.jpg"
             alt="Convívio no Centro de Dia"
-            loading="lazy">
+            loading="lazy"
+          >
 
           <img
             src="imagens/centrodia-3.jpg"
             alt="Acompanhamento aos utentes do Centro de Dia"
-            loading="lazy">
+            loading="lazy"
+          >
 
           <img
             src="imagens/centrodia-4.jpg"
             alt="Instalações do Centro de Dia"
-            loading="lazy">
+            loading="lazy"
+          >
 
           <img
             src="imagens/centrodia-5.jpg"
             alt="Atividades desenvolvidas no Centro de Dia"
-            loading="lazy">
+            loading="lazy"
+          >
 
           <img
             src="imagens/centrodia-6.jpg"
             alt="Bem-estar e acompanhamento no Centro de Dia"
-            loading="lazy">
+            loading="lazy"
+          >
 
         </div>
 
@@ -145,7 +212,7 @@
 
       <div class="container">
 
-        <h2>Os nossos objetivos</h2>
+        <h2>Objetivos</h2>
 
         <div class="objetivos-lista">
 
@@ -186,39 +253,6 @@
 
     </section>
 
-    <section class="servico-documentos" id="documentos">
-
-      <div class="container">
-
-        <h2>Documentos e informações</h2>
-
-        <p class="servico-documentos-intro">
-          Consulte os documentos disponíveis sobre o funcionamento
-          e os serviços do Centro de Dia.
-        </p>
-
-        <div class="servico-botoes">
-
-          <a
-            href="https://drive.google.com/file/d/1Or3svqCvph1NxUIiSyFxdLm3JQQGRd3W/preview"
-            target="_blank"
-            rel="noopener noreferrer">
-            Consultar Regulamento
-          </a>
-
-          <a
-            href="https://drive.google.com/file/d/1U9SxltiMWLFloBp4Zoag1H1nhHg6zpay/preview"
-            target="_blank"
-            rel="noopener noreferrer">
-            Consultar Informações
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
     <section class="contactos servico-contacto">
 
       <div class="container">
@@ -226,20 +260,15 @@
         <h2>Contacte-nos</h2>
 
         <p>
-          Para esclarecer dúvidas ou obter mais informações sobre o Centro
-          de Dia, entre em contacto com a Fundação.
+          Pretende obter mais informações sobre esta resposta social,
+          esclarecer alguma dúvida ou agendar uma visita?
+          Teremos todo o gosto em ajudá-lo.
         </p>
 
         <div class="servico-botoes">
-
-          <a href="tel:+351268662174">
-            +351 268 662 174
+          <a href="index.html#contactos">
+            Pedir Informações
           </a>
-
-          <a href="mailto:csnspaco@sapo.pt">
-            csnspaco@sapo.pt
-          </a>
-
         </div>
 
       </div>
@@ -255,45 +284,12 @@
     </p>
 
     <p class="congregacao-link">
-
-      Instituição pertencente às Irmãs Concepcionistas ao Serviço dos Pobres
-
-      <br>
-
-      <a
-        href="https://irmasconcepcionistas.org/centro-social-nossa-senhora-do-paco/"
-        target="_blank"
-        rel="noopener noreferrer">
-        Conhecer congregação
+      <a href="index.html">
+        Voltar à página inicial
       </a>
-
     </p>
 
   </footer>
-
-  <nav class="mobile-bottom-menu">
-
-    <a href="index.html">
-      Início
-    </a>
-
-    <a href="index.html#servicos">
-      Serviços
-    </a>
-
-    <a href="#documentos">
-      Documentos
-    </a>
-
-    <a href="index.html#contactos">
-      Contactos
-    </a>
-
-  </nav>
-
-  <button class="back-to-top" type="button" aria-label="Voltar ao topo">
-    ↑
-  </button>
 
   <script src="script.js"></script>
 
