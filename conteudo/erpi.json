@@ -1,0 +1,38 @@
+{
+  "capa_1": "Estrutura Residencial para Pessoas Idosas dedicada ao acolhimento, cuidado e bem-estar integral dos seus utentes.",
+  "intro_galeria": "Conheça alguns dos espaços da nossa ERPI.",
+  "galeria": [
+    {
+      "foto": "imagens/erpi-1.jpg",
+      "descricao": "Espaços da ERPI"
+    },
+    {
+      "foto": "imagens/erpi-2.jpg",
+      "descricao": "Espaços de convívio da ERPI"
+    },
+    {
+      "foto": "imagens/erpi-3.jpg",
+      "descricao": "Espaços interiores da ERPI"
+    },
+    {
+      "foto": "imagens/erpi-4.jpg",
+      "descricao": "Instalações da ERPI"
+    },
+    {
+      "foto": "imagens/erpi-5.jpg",
+      "descricao": "Espaços de bem-estar da ERPI"
+    },
+    {
+      "foto": "imagens/erpi-6.jpg",
+      "descricao": "Espaços da Fundação destinados à ERPI"
+    }
+  ],
+  "secao_1_1": "A Fundação Centro Social Nossa Senhora do Paço oferece aos seus utentes um conjunto de serviços que permite assistir a pessoa idosa não apenas como ser único e individual, mas também como agente de socialização integrado num grupo e no meio que a rodeia.",
+  "secao_1_2": "A ERPI tem como missão acolher e prestar assistência de elevada qualidade a pessoas que desejem partilhar os seus anos de maior serenidade em convívio, descanso, bem-estar e segurança.",
+  "secao_1_3": "A nossa filosofia assenta na promoção do bem-estar físico, emocional e social, respeitando a história, a individualidade e a dignidade de cada pessoa.",
+  "secao_2_1": "Promover a qualidade de vida.",
+  "secao_2_2": "Proporcionar serviços permanentes e adequados às necessidades biopsicossociais das pessoas idosas.",
+  "secao_2_3": "Contribuir para a estabilização ou retardamento do processo de envelhecimento.",
+  "secao_2_4": "Privilegiar a interação com a família, pessoas significativas e comunidade.",
+  "secao_2_5": "Promover estratégias de reforço da autoestima, valorização e autonomia pessoal e social."
+}

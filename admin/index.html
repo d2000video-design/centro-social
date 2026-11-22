@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Gestão de conteúdos | Fundação Nossa Senhora do Paço</title>
+  <script>window.CMS_MANUAL_INIT = true;</script>
+  <script defer src="https://unpkg.com/decap-cms@3.17.0/dist/decap-cms.js"
+    integrity="sha384-uh1IAMxJHPiQw7HR3dq6Nf1B/f7b5/Tj3XkNWpRWZhDsxZSqWZPbzWx+STgCBKQJ"
+    crossorigin="anonymous"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      import('./painel.mjs').catch(() => {
+        document.body.textContent = 'Não foi possível carregar o painel. Atualize a página para tentar novamente.';
+      });
+    });
+  </script>
+</head>
+<body></body>
+</html>

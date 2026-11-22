@@ -1,0 +1,39 @@
+{
+  "capa_1": "Um conjunto de serviços que contribuem para a permanência das pessoas no seu meio habitual de vida, promovendo autonomia, acompanhamento, convívio e qualidade de vida.",
+  "intro_galeria": "Conheça alguns dos espaços e momentos do nosso Centro de Dia.",
+  "galeria": [
+    {
+      "foto": "imagens/centrodia-1.jpg",
+      "descricao": "Espaços e atividades do Centro de Dia"
+    },
+    {
+      "foto": "imagens/centrodia-2.jpg",
+      "descricao": "Convívio no Centro de Dia"
+    },
+    {
+      "foto": "imagens/centrodia-3.jpg",
+      "descricao": "Acompanhamento aos utentes do Centro de Dia"
+    },
+    {
+      "foto": "imagens/centrodia-4.jpg",
+      "descricao": "Instalações do Centro de Dia"
+    },
+    {
+      "foto": "imagens/centrodia-5.jpg",
+      "descricao": "Atividades desenvolvidas no Centro de Dia"
+    },
+    {
+      "foto": "imagens/centrodia-6.jpg",
+      "descricao": "Bem-estar e acompanhamento no Centro de Dia"
+    }
+  ],
+  "secao_1_1": "A resposta social Centro de Dia oferece aos seus utentes um conjunto de serviços que contribuem para a manutenção das pessoas no seu meio habitual de vida, promovendo a autonomia e prevenindo situações de dependência ou o seu agravamento.",
+  "secao_1_2": "Os utentes têm ainda a possibilidade de estabelecer novos relacionamentos e elos de ligação com o exterior, participando diariamente num ambiente de proximidade, convívio e segurança.",
+  "secao_1_3": "Para proporcionar uma resposta de qualidade às pessoas idosas, o Centro de Dia conta com uma equipa multidisciplinar, motivada e empenhada, que trabalha diariamente para promover o bem-estar físico, emocional e social de cada utente.",
+  "secao_2_1": "Promover a qualidade de vida.",
+  "secao_2_2": "Promover as relações interpessoais entre as pessoas idosas, bem como a convivência com as demais faixas etárias.",
+  "secao_2_3": "Contribuir para a estabilização ou retardamento do processo de envelhecimento.",
+  "secao_2_4": "Privilegiar a interação com a família, pessoas significativas e comunidade, procurando otimizar os níveis de atividade e participação social.",
+  "secao_2_5": "Promover estratégias de reforço da autoestima, valorização e autonomia pessoal e social, num ambiente agradável de lazer, convívio, cultura e formação.",
+  "secao_2_6": "Combater situações de isolamento e falta de apoio através de um conjunto diversificado de atividades."
+}
