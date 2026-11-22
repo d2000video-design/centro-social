@@ -5,6 +5,16 @@ const response = await fetch('./config.yml');
 if (!response.ok) throw new Error('Não foi possível carregar o painel.');
 const config = await response.json();
 config.backend.base_url = window.location.origin;
+
+// Decap can validate media with a temporary asset URL while editing.
+// The renderer and build validate the actual published paths.
+function configureFields(fields) {
+  for (const field of fields) {
+    if (field.widget === 'image' || field.widget === 'file') delete field.pattern;
+    if (field.fields) configureFields(field.fields);
+  }
+}
+for (const file of config.collections[0].files) configureFields(file.fields);
 const {CMS, createClass, h} = window;
 
 for (const {name} of config.collections[0].files) {
@@ -31,7 +41,11 @@ for (const {name} of config.collections[0].files) {
     render() {
       if (this.state.error) return h('p', {}, 'Pré-visualização indisponível.');
       if (!this.state.template) return h('p', {}, 'A carregar a pré-visualização…');
-      const srcDoc = renderPage(this.state.template, this.props.entry.get('data').toJS(), {
+      // The base URL must precede relative stylesheets and other page resources.
+      const template = this.state.template
+        .replace('<!--cms:base--><!--/cms-->', '')
+        .replace('<head>', '<head><!--cms:base--><!--/cms-->');
+      const srcDoc = renderPage(template, this.props.entry.get('data').toJS(), {
         preview: true,
         origin: window.location.origin,
         asset: (value, path) => {
