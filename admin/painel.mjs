@@ -48,4 +48,4 @@ for (const {name} of config.collections[0].files) {
     }
   }));
 }
-CMS.init({config});
+CMS.init({config: {...config, load_config_file: false}});
