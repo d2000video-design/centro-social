@@ -1,0 +1,678 @@
+{
+  "backend": {
+    "name": "github",
+    "repo": "d2000video-design/centro-social",
+    "branch": "main",
+    "base_url": "",
+    "auth_endpoint": "api/cms-auth",
+    "skip_ci": false
+  },
+  "locale": "pt",
+  "publish_mode": "simple",
+  "media_folder": "imagens/uploads",
+  "public_folder": "/imagens/uploads",
+  "collections": [
+    {
+      "name": "paginas",
+      "label": "Páginas do site",
+      "files": [
+        {
+          "name": "index",
+          "label": "Página inicial",
+          "file": "conteudo/index.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "titulo",
+              "label": "Capa · título",
+              "widget": "text"
+            },
+            {
+              "name": "capa_1",
+              "label": "Capa · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "sobre_1",
+              "label": "Sobre nós · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "sobre_2",
+              "label": "Sobre nós · parágrafo 2",
+              "widget": "text"
+            },
+            {
+              "name": "sobre_3",
+              "label": "Sobre nós · parágrafo 3",
+              "widget": "text"
+            },
+            {
+              "name": "sobre_4",
+              "label": "Sobre nós · parágrafo 4",
+              "widget": "text"
+            },
+            {
+              "name": "valores_1",
+              "label": "Missão, visão e valores · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "valores_2",
+              "label": "Missão, visão e valores · parágrafo 2",
+              "widget": "text"
+            },
+            {
+              "name": "valores_3",
+              "label": "Missão, visão e valores · parágrafo 3",
+              "widget": "text"
+            },
+            {
+              "name": "valores_4",
+              "label": "Missão, visão e valores · parágrafo 4",
+              "widget": "text"
+            },
+            {
+              "name": "valores_5",
+              "label": "Missão, visão e valores · parágrafo 5",
+              "widget": "text"
+            },
+            {
+              "name": "espacos_1",
+              "label": "Horta e espaços exteriores · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "espacos_2",
+              "label": "Horta e espaços exteriores · parágrafo 2",
+              "widget": "text"
+            },
+            {
+              "name": "momentos",
+              "label": "Notícias e momentos",
+              "widget": "list",
+              "required": false,
+              "summary": "{{fields.titulo}}",
+              "fields": [
+                {
+                  "name": "titulo",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "data",
+                  "label": "Data",
+                  "widget": "datetime",
+                  "date_format": "DD/MM/YYYY",
+                  "time_format": false,
+                  "format": "YYYY-MM-DD"
+                },
+                {
+                  "name": "descricao",
+                  "label": "Texto",
+                  "widget": "text"
+                },
+                {
+                  "name": "foto",
+                  "label": "Fotografia",
+                  "widget": "image",
+                  "pattern": [
+                    "^/?imagens/[^?#]+\\.(?:[jJ][pP][eE]?[gG]|[pP][nN][gG]|[wW][eE][bB][pP])$",
+                    "Escolha uma imagem JPG, PNG ou WebP."
+                  ]
+                },
+                {
+                  "name": "link",
+                  "label": "Ligação para saber mais",
+                  "widget": "string",
+                  "required": false,
+                  "pattern": [
+                    "^https://[^\\s]+$",
+                    "Use uma ligação começada por https://."
+                  ]
+                }
+              ],
+              "hint": "Use apenas fotografias e textos autorizados para publicação."
+            },
+            {
+              "name": "newsletters",
+              "label": "Newsletters",
+              "widget": "list",
+              "required": false,
+              "summary": "{{fields.titulo}}",
+              "fields": [
+                {
+                  "name": "titulo",
+                  "label": "Título da edição",
+                  "widget": "string"
+                },
+                {
+                  "name": "data",
+                  "label": "Data",
+                  "widget": "datetime",
+                  "date_format": "DD/MM/YYYY",
+                  "time_format": false,
+                  "format": "YYYY-MM-DD"
+                },
+                {
+                  "name": "capa",
+                  "label": "Capa",
+                  "widget": "image",
+                  "required": false,
+                  "pattern": [
+                    "^/?imagens/[^?#]+\\.(?:[jJ][pP][eE]?[gG]|[pP][nN][gG]|[wW][eE][bB][pP])$",
+                    "Escolha uma imagem JPG, PNG ou WebP."
+                  ]
+                },
+                {
+                  "name": "pdf",
+                  "label": "Ficheiro PDF",
+                  "widget": "file",
+                  "pattern": [
+                    "^/?imagens/[^?#]+\\.[pP][dD][fF]$",
+                    "Escolha um ficheiro PDF."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "erpi",
+          "label": "ERPI",
+          "file": "conteudo/erpi.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "capa_1",
+              "label": "Apresentação · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "intro_galeria",
+              "label": "Galeria · introdução",
+              "widget": "text"
+            },
+            {
+              "name": "galeria",
+              "label": "Fotografias da galeria",
+              "widget": "list",
+              "min": 1,
+              "summary": "{{fields.descricao}}",
+              "fields": [
+                {
+                  "name": "foto",
+                  "label": "Fotografia",
+                  "widget": "image",
+                  "pattern": [
+                    "^/?imagens/[^?#]+\\.(?:[jJ][pP][eE]?[gG]|[pP][nN][gG]|[wW][eE][bB][pP])$",
+                    "Escolha uma imagem JPG, PNG ou WebP."
+                  ]
+                },
+                {
+                  "name": "descricao",
+                  "label": "Descrição da fotografia",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "secao_1_1",
+              "label": "Sobre a ERPI · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "secao_1_2",
+              "label": "Sobre a ERPI · parágrafo 2",
+              "widget": "text"
+            },
+            {
+              "name": "secao_1_3",
+              "label": "Sobre a ERPI · parágrafo 3",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_1",
+              "label": "Objetivos · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_2",
+              "label": "Objetivos · parágrafo 2",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_3",
+              "label": "Objetivos · parágrafo 3",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_4",
+              "label": "Objetivos · parágrafo 4",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_5",
+              "label": "Objetivos · parágrafo 5",
+              "widget": "text"
+            }
+          ]
+        },
+        {
+          "name": "centro-dia",
+          "label": "Centro de Dia",
+          "file": "conteudo/centro-dia.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "capa_1",
+              "label": "Apresentação · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "intro_galeria",
+              "label": "Galeria · introdução",
+              "widget": "text"
+            },
+            {
+              "name": "galeria",
+              "label": "Fotografias da galeria",
+              "widget": "list",
+              "min": 1,
+              "summary": "{{fields.descricao}}",
+              "fields": [
+                {
+                  "name": "foto",
+                  "label": "Fotografia",
+                  "widget": "image",
+                  "pattern": [
+                    "^/?imagens/[^?#]+\\.(?:[jJ][pP][eE]?[gG]|[pP][nN][gG]|[wW][eE][bB][pP])$",
+                    "Escolha uma imagem JPG, PNG ou WebP."
+                  ]
+                },
+                {
+                  "name": "descricao",
+                  "label": "Descrição da fotografia",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "secao_1_1",
+              "label": "Sobre o Centro de Dia · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "secao_1_2",
+              "label": "Sobre o Centro de Dia · parágrafo 2",
+              "widget": "text"
+            },
+            {
+              "name": "secao_1_3",
+              "label": "Sobre o Centro de Dia · parágrafo 3",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_1",
+              "label": "Objetivos · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_2",
+              "label": "Objetivos · parágrafo 2",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_3",
+              "label": "Objetivos · parágrafo 3",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_4",
+              "label": "Objetivos · parágrafo 4",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_5",
+              "label": "Objetivos · parágrafo 5",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_6",
+              "label": "Objetivos · parágrafo 6",
+              "widget": "text"
+            }
+          ]
+        },
+        {
+          "name": "apoio-domiciliario",
+          "label": "Apoio Domiciliário",
+          "file": "conteudo/apoio-domiciliario.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "capa_1",
+              "label": "Apresentação · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "intro_galeria",
+              "label": "Galeria · introdução",
+              "widget": "text"
+            },
+            {
+              "name": "galeria",
+              "label": "Fotografias da galeria",
+              "widget": "list",
+              "min": 1,
+              "summary": "{{fields.descricao}}",
+              "fields": [
+                {
+                  "name": "foto",
+                  "label": "Fotografia",
+                  "widget": "image",
+                  "pattern": [
+                    "^/?imagens/[^?#]+\\.(?:[jJ][pP][eE]?[gG]|[pP][nN][gG]|[wW][eE][bB][pP])$",
+                    "Escolha uma imagem JPG, PNG ou WebP."
+                  ]
+                },
+                {
+                  "name": "descricao",
+                  "label": "Descrição da fotografia",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "secao_1_1",
+              "label": "Sobre o Apoio Domiciliário · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "secao_1_2",
+              "label": "Sobre o Apoio Domiciliário · parágrafo 2",
+              "widget": "text"
+            },
+            {
+              "name": "secao_1_3",
+              "label": "Sobre o Apoio Domiciliário · parágrafo 3",
+              "widget": "text"
+            },
+            {
+              "name": "secao_1_4",
+              "label": "Sobre o Apoio Domiciliário · parágrafo 4",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_1",
+              "label": "Objetivos · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_2",
+              "label": "Objetivos · parágrafo 2",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_3",
+              "label": "Objetivos · parágrafo 3",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_4",
+              "label": "Objetivos · parágrafo 4",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_5",
+              "label": "Objetivos · parágrafo 5",
+              "widget": "text"
+            }
+          ]
+        },
+        {
+          "name": "creche",
+          "label": "Creche",
+          "file": "conteudo/creche.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "capa_1",
+              "label": "Apresentação · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "intro_galeria",
+              "label": "Galeria · introdução",
+              "widget": "text"
+            },
+            {
+              "name": "galeria",
+              "label": "Fotografias da galeria",
+              "widget": "list",
+              "min": 1,
+              "summary": "{{fields.descricao}}",
+              "fields": [
+                {
+                  "name": "foto",
+                  "label": "Fotografia",
+                  "widget": "image",
+                  "pattern": [
+                    "^/?imagens/[^?#]+\\.(?:[jJ][pP][eE]?[gG]|[pP][nN][gG]|[wW][eE][bB][pP])$",
+                    "Escolha uma imagem JPG, PNG ou WebP."
+                  ]
+                },
+                {
+                  "name": "descricao",
+                  "label": "Descrição da fotografia",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "secao_1_1",
+              "label": "Sobre a Creche · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "secao_1_2",
+              "label": "Sobre a Creche · parágrafo 2",
+              "widget": "text"
+            },
+            {
+              "name": "secao_1_3",
+              "label": "Sobre a Creche · parágrafo 3",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_1",
+              "label": "O nosso projeto educativo · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_2",
+              "label": "O nosso projeto educativo · parágrafo 2",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_3",
+              "label": "O nosso projeto educativo · parágrafo 3",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_4",
+              "label": "O nosso projeto educativo · parágrafo 4",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_5",
+              "label": "O nosso projeto educativo · parágrafo 5",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_6",
+              "label": "O nosso projeto educativo · parágrafo 6",
+              "widget": "text"
+            },
+            {
+              "name": "secao_3_1",
+              "label": "O que oferecemos · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "secao_3_2",
+              "label": "O que oferecemos · parágrafo 2",
+              "widget": "text"
+            },
+            {
+              "name": "secao_3_3",
+              "label": "O que oferecemos · parágrafo 3",
+              "widget": "text"
+            },
+            {
+              "name": "secao_3_4",
+              "label": "O que oferecemos · parágrafo 4",
+              "widget": "text"
+            },
+            {
+              "name": "secao_3_5",
+              "label": "O que oferecemos · parágrafo 5",
+              "widget": "text"
+            }
+          ]
+        },
+        {
+          "name": "jardim-infancia",
+          "label": "Jardim de Infância",
+          "file": "conteudo/jardim-infancia.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "capa_1",
+              "label": "Apresentação · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "intro_galeria",
+              "label": "Galeria · introdução",
+              "widget": "text"
+            },
+            {
+              "name": "galeria",
+              "label": "Fotografias da galeria",
+              "widget": "list",
+              "min": 1,
+              "summary": "{{fields.descricao}}",
+              "fields": [
+                {
+                  "name": "foto",
+                  "label": "Fotografia",
+                  "widget": "image",
+                  "pattern": [
+                    "^/?imagens/[^?#]+\\.(?:[jJ][pP][eE]?[gG]|[pP][nN][gG]|[wW][eE][bB][pP])$",
+                    "Escolha uma imagem JPG, PNG ou WebP."
+                  ]
+                },
+                {
+                  "name": "descricao",
+                  "label": "Descrição da fotografia",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "secao_1_1",
+              "label": "Sobre o Jardim de Infância · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "secao_1_2",
+              "label": "Sobre o Jardim de Infância · parágrafo 2",
+              "widget": "text"
+            },
+            {
+              "name": "secao_1_3",
+              "label": "Sobre o Jardim de Infância · parágrafo 3",
+              "widget": "text"
+            },
+            {
+              "name": "secao_1_4",
+              "label": "Sobre o Jardim de Infância · parágrafo 4",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_1",
+              "label": "O nosso projeto educativo · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_2",
+              "label": "O nosso projeto educativo · parágrafo 2",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_3",
+              "label": "O nosso projeto educativo · parágrafo 3",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_4",
+              "label": "O nosso projeto educativo · parágrafo 4",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_5",
+              "label": "O nosso projeto educativo · parágrafo 5",
+              "widget": "text"
+            },
+            {
+              "name": "secao_2_6",
+              "label": "O nosso projeto educativo · parágrafo 6",
+              "widget": "text"
+            },
+            {
+              "name": "secao_3_1",
+              "label": "O que oferecemos · parágrafo 1",
+              "widget": "text"
+            },
+            {
+              "name": "secao_3_2",
+              "label": "O que oferecemos · parágrafo 2",
+              "widget": "text"
+            },
+            {
+              "name": "secao_3_3",
+              "label": "O que oferecemos · parágrafo 3",
+              "widget": "text"
+            },
+            {
+              "name": "secao_3_4",
+              "label": "O que oferecemos · parágrafo 4",
+              "widget": "text"
+            },
+            {
+              "name": "secao_3_5",
+              "label": "O que oferecemos · parágrafo 5",
+              "widget": "text"
+            },
+            {
+              "name": "secao_3_6",
+              "label": "O que oferecemos · parágrafo 6",
+              "widget": "text"
+            },
+            {
+              "name": "secao_3_7",
+              "label": "O que oferecemos · parágrafo 7",
+              "widget": "text"
+            },
+            {
+              "name": "secao_3_8",
+              "label": "O que oferecemos · parágrafo 8",
+              "widget": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

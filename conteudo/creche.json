@@ -1,0 +1,44 @@
+{
+  "capa_1": "Um espaço seguro, acolhedor e estimulante, onde cada criança cresce rodeada de carinho, aprendizagem e novas descobertas.",
+  "intro_galeria": "Conheça alguns dos espaços e momentos da nossa Creche.",
+  "galeria": [
+    {
+      "foto": "imagens/creche-1.jpg",
+      "descricao": "Espaços da Creche"
+    },
+    {
+      "foto": "imagens/creche-2.jpg",
+      "descricao": "Atividades na Creche"
+    },
+    {
+      "foto": "imagens/creche-3.jpg",
+      "descricao": "Aprendizagem e descoberta na Creche"
+    },
+    {
+      "foto": "imagens/creche-4.jpg",
+      "descricao": "Instalações da Creche"
+    },
+    {
+      "foto": "imagens/creche-5.jpg",
+      "descricao": "Brincadeira e desenvolvimento na Creche"
+    },
+    {
+      "foto": "imagens/creche-6.jpg",
+      "descricao": "Ambiente acolhedor da Creche"
+    }
+  ],
+  "secao_1_1": "A Creche da Fundação Centro Social Nossa Senhora do Paço constitui uma resposta social destinada a crianças dos 12 aos 36 meses, proporcionando um ambiente familiar, seguro e afetivo que favorece o seu desenvolvimento integral.",
+  "secao_1_2": "Os primeiros anos de vida são fundamentais para o desenvolvimento físico, emocional, cognitivo e social da criança. Por isso, valorizamos uma educação baseada na confiança, no respeito e na descoberta do mundo através da brincadeira.",
+  "secao_1_3": "Dispomos de espaços acolhedores, luminosos e preparados para proporcionar experiências enriquecedoras, respeitando sempre o ritmo individual de cada criança.",
+  "secao_2_1": "Promover uma relação de confiança, cuidado e respeito por cada criança.",
+  "secao_2_2": "Incentivar a livre expressão artística, a criatividade e a descoberta.",
+  "secao_2_3": "Proporcionar um ambiente acolhedor que dê continuidade ao conforto do espaço familiar.",
+  "secao_2_4": "Desenvolver rotinas flexíveis e adaptadas às necessidades de cada criança e de cada família.",
+  "secao_2_5": "Facilitar o acesso das famílias ao espaço educativo e ao dia a dia das crianças.",
+  "secao_2_6": "Construir uma parceria próxima com as famílias, incentivando a sua participação no quotidiano da Creche.",
+  "secao_3_1": "Equipa educativa qualificada.",
+  "secao_3_2": "Alimentação equilibrada e adaptada à idade.",
+  "secao_3_3": "Atividades pedagógicas adequadas ao desenvolvimento infantil.",
+  "secao_3_4": "Espaços interiores acolhedores, luminosos e seguros.",
+  "secao_3_5": "Momentos de brincadeira, exploração e socialização."
+}

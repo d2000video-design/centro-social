@@ -19,8 +19,11 @@ async function carregarSlides() {
     return;
   }
 
+  const cmsSlides = document.querySelector("#cms-momentos");
+  slides = cmsSlides ? JSON.parse(cmsSlides.textContent) : [];
+
   try {
-    const response = await fetch(apiUrl);
+    const response = await fetch(apiUrl, {signal: AbortSignal.timeout(5000)});
 
     if (!response.ok) {
       throw new Error("Não foi possível carregar os momentos.");
@@ -28,22 +31,22 @@ async function carregarSlides() {
 
     const data = await response.json();
 
-    slides = data.filter(item =>
+    const existingSlides = data.filter(item =>
       item.ativo &&
       item.ativo.toLowerCase().trim() === "sim" &&
       item.foto1
     );
 
-    if (slides.length > 0) {
-      currentSlide = 0;
-      mostrarSlide(currentSlide);
-
-      if (slides.length > 1) {
-        slideshowInterval = setInterval(nextSlide, 5000);
-      }
-    }
+    slides.push(...existingSlides);
   } catch (error) {
     console.error("Erro ao carregar o slideshow:", error);
+  }
+
+  if (slides.length > 0) {
+    mostrarSlide(0);
+    if (slides.length > 1) {
+      slideshowInterval = setInterval(nextSlide, 5000);
+    }
   }
 }
 
